@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  background-color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+p::selection {
+  background: deeppink;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 10px;
+  padding: 20px; /* Ajustar el espaciado del navbar */
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: gold 10px outset;
+  display: flex;
+  justify-content: center;
+  min-width: 250px;
+}
+
+.navbar li {
+  margin: 0 10px; /* Espaciado entre elementos del navbar */
+  border-radius: 3em
+}
+
+.navbar li a {
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.navbar li a:hover {
+  background-color: #ff66bd;
+  transition: all;
+  transition-duration: 25ms;
+  transform: scale(2);
+}
+
+.galeria {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.axolove {
+  border-radius: 13%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+section {
+  background-color: rgb(254, 254, 254);
+  text-align: justify;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.title {
+  color: red;
+  text-align: center;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centrar horizontalmente */
+  overflow: hidden;
+}
+
+/* Agregar estilos responsive */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px; /* Ajustar el espaciado del navbar para dispositivos móviles */
+  }
+
+  .axolove {
+    max-width: 150px; /* Cambiar el tamaño de las imágenes */
+    max-height: 150px;
+  }
+
+  section {
+    margin: 10px; /* Ajustar los márgenes del section */
+    padding: 10px;
+  }
+
+  .iframe-container {
+    max-width: none; /* Restablecer el máximo ancho en dispositivos más pequeños */
+  }
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  background-color: rgb(0, 191, 255);
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  max-width: auto;
+  flex-wrap: wrap;
+}
+
+p::selection {
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 10px;
+  padding: 20px; /* Ajustar el espaciado del navbar para dispositivos móviles */
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: gold 10px outset;
+  display: flex;
+  justify-content: center;
+  min-width: 250px;
+}
+
+.navbar li {
+  margin: 0 10px; /* Espaciado entre elementos del navbar */
+  border-radius: 5em;
+}
+
+.navbar li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.navbar li a:hover {
+  background-color: #ff66bd;
+  transition: all;
+  transition-duration: 25ms;
+  transform: scale(2);
+}
+
+.galeria-molang,
+.galeria-pusheen {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.molang,
+.pusheen {
+  border-radius: 15%;
+  box-shadow: 1px 1px 10px 10px #ffffff;
+  margin: 10px;
+}
+
+.molang,
+.pusheen {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+section {
+  justify-content: center;
+  background-color: azure;
+  padding: 3%;
+  border-radius: 2em;
+  text-align: justify;
+  margin: 4em 2em; /* Ajusta los márgenes superior e inferior y centra horizontalmente */
+  margin-right: 23em;
+  margin-left: 23em;
+  max-width: 100%;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.content-hidden {
+  transform: translateX(-100%);
+}
+
+.content div {
+  flex: 1;
+  min-width: 100%;
+}
+
+/* Agregar estilos responsive */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px; /* Ajustar el espaciado del navbar para dispositivos móviles */
+  }
+
+  .molang,
+  .pusheen {
+    max-height: 150px; /* Cambiar el tamaño de las imágenes */
+    max-width: 150px;
+  }
+
+  section {
+    margin: 2em; /* Ajustar los márgenes del section */
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}

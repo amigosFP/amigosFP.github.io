@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  background-color: rgb(0, 191, 255);
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  position: fixed;
+  max-width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 10px;
+  padding: 20px; /* Ajustar el espaciado del navbar */
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: gold 10px outset;
+  display: flex;
+  justify-content: center;
+  min-width: 250px;
+}
+
+.navbar li {
+  margin: 0 10px; /* Espaciado entre elementos del navbar */
+  display: inline-flex;
+  border-radius: 25px;
+}
+
+.navbar li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.navbar li a:hover {
+  background-color: #ff66bd;
+  transition: all;
+  transition-duration: 25ms;
+  transform: scale(2);
+}
+
+video {
+  max-width: 100%; /* Adjusting for responsiveness */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+/* Puedes agregar más estilos según tus preferencias */
+
+video::-webkit-media-controls {
+  background-color: transparent; /* Color de fondo de la barra de controles */
+  border-radius: 10px; /* Bordes redondeados para la barra de controles */
+}
+
+/* Personaliza el color de la barra de progreso */
+video::-webkit-media-controls-timeline {
+  background: gradient(to right, #007bff, #00c8ff); /* Cambia el color de la barra de progreso */
+  height: 20px; /* Altura de la barra de progreso */
+  border-radius: 25px; /* Bordes redondeados para la barra de progreso */
+}
+
+/* Agregar estilos responsive */
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding: 10px; /* Ajustar el espaciado del navbar para dispositivos móviles */
+  }
+}
